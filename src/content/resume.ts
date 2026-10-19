@@ -1,22 +1,3 @@
-/**
- * ─────────────────────────────────────────────────────────────────────────────
- *  SITE CONTENT — EDIT EVERYTHING FROM THIS ONE FILE
- * ─────────────────────────────────────────────────────────────────────────────
- *  The whole portfolio is driven by the data below. Change a string, save, and
- *  the page updates. No component edits required.
- *
- *  QUICK CHECKLIST BEFORE PUBLISHING:
- *   1. profile.name / profile.monogram   → your name and initials
- *   2. profile.email + profile.socials   → your real contact links
- *   3. hero.headline                     → the big statement at the top
- *
- *  Rules of thumb:
- *   • Keep `highlights` to 3–4 short bullets (they render best).
- *   • `tech` chips are free-form; add or remove as needed.
- *   • To hide an entry, comment it out or delete it from the array.
- * ─────────────────────────────────────────────────────────────────────────────
- */
-
 export interface SocialLink {
   label: string;
   href: string;
@@ -66,8 +47,8 @@ export interface EducationEntry {
 /* ── Profile ────────────────────────────────────────────────────────────── */
 
 export const profile = {
-  name: "Your Name",
-  monogram: "YN",
+  name: "Abhishek Yawalkar",
+  monogram: "AY",
   role: "AI Software Engineer",
   location: "Mumbai, India",
   availability: "Open to AI engineering roles",
