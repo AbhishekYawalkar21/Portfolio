@@ -1,6 +1,6 @@
 # Portfolio — AI Software Engineer
 
-A single-page portfolio built with **React + TypeScript + Vite**, hand-written CSS, and zero UI
+<!-- A single-page portfolio built with **React + TypeScript + Vite**, hand-written CSS, and zero UI
 dependencies. Every word on the page comes from one file, so the site can be updated without
 touching components.
 
@@ -156,4 +156,4 @@ npm run build
 - **Netlify / Vercel / Cloudflare Pages**: build `npm run build`, publish directory `dist`
 - **GitHub Pages**: push `dist/` to the `gh-pages` branch. If the site lives at
   `username.github.io/repo-name/`, set `base: "/repo-name/"` in [`vite.config.ts`](vite.config.ts)
-  before building.
+  before building. -->
