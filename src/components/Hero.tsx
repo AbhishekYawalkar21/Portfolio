@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { hero, profile } from "../content/resume";
+import { EmailButton } from "./EmailButton";
 import { ArrowDown, ArrowUpRight } from "./Icons";
 
 function delay(ms: number) {
@@ -53,7 +54,7 @@ export function Hero() {
 
         <div className="hero-body">
           <div className="hero-copy">
-            <p className="anim-rise" style={delay(300)}>
+            <p className="anim-rise" style={{ ...delay(300), textAlign: 'justify' }}>
               {hero.description}
             </p>
 
@@ -62,24 +63,24 @@ export function Hero() {
                 {hero.primaryCta.label}
                 <ArrowDown />
               </a>
-              <a className="btn btn-outline" href={hero.secondaryCta.href}>
+              {/* <a className="btn btn-outline" href={hero.secondaryCta.href}>
                 {hero.secondaryCta.label}
                 <ArrowUpRight />
-              </a>
+              </a> */}
             </div>
 
-            <div className="hero-links anim-rise" style={delay(470)}>
+            {/* <div className="hero-links anim-rise" style={delay(470)}>
               {profile.socials.map((social) => (
                 <a key={social.label} href={social.href} target="_blank" rel="noreferrer">
                   {social.label}
-                  <ArrowUpRight size={11} />
+                  <ArrowUpRight size={15} />
                 </a>
               ))}
-              <a href={`mailto:${profile.email}`}>
+              <EmailButton>
                 Email
                 <ArrowUpRight size={11} />
-              </a>
-            </div>
+              </EmailButton>
+            </div> */}
           </div>
 
           <aside className="hero-card anim-rise" style={delay(420)}>
@@ -97,12 +98,24 @@ export function Hero() {
               ))}
             </dl>
 
-            <a className="hero-card-link" href={`mailto:${profile.email}`}>
-              {profile.email}
+            {/* <EmailButton className="hero-card-link">
+              Send me an email
               <span className="arrow" aria-hidden="true">
                 <ArrowUpRight size={13} />
               </span>
-            </a>
+            </EmailButton> */}
+            <div className="hero-links anim-rise" style={delay(470)}>
+              {profile.socials.map((social) => (
+                <a key={social.label} href={social.href} target="_blank" rel="noreferrer">
+                  {social.label}
+                  <ArrowUpRight size={11} />
+                </a>
+              ))}
+              <EmailButton>
+                Email
+                <ArrowUpRight size={11} />
+              </EmailButton>
+            </div>
           </aside>
         </div>
 

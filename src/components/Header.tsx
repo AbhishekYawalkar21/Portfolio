@@ -47,7 +47,7 @@ export function Header({ theme, onToggleTheme }: HeaderProps) {
           </span>
           <span className="brand-text">
             <span className="brand-name">{profile.name}</span>
-            <span className="brand-role">{profile.role}</span>
+            {/* <span className="brand-role">{profile.role}</span> */}
           </span>
         </a>
 

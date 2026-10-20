@@ -1,4 +1,5 @@
 import { profile } from "../content/resume";
+import { EmailButton } from "./EmailButton";
 import { ArrowUpRight } from "./Icons";
 import { Reveal } from "./Reveal";
 import { ResumeButton } from "./ResumeButton";
@@ -18,13 +19,13 @@ export function Contact() {
             detail.
           </p>
 
-          <a className="contact-email" href={`mailto:${profile.email}`}>
-            {profile.email}
+          <EmailButton className="contact-email">
+            Send me an email
             <ArrowUpRight size={17} />
-          </a>
+          </EmailButton>
 
           <div className="contact-meta">
-            <span>{profile.location}</span>
+            {/* <span>{profile.location}</span> */}
             <span className="dot" aria-hidden="true" />
             {profile.socials.map((social) => (
               <a key={social.label} href={social.href} target="_blank" rel="noreferrer">
@@ -32,7 +33,10 @@ export function Contact() {
               </a>
             ))}
             <span className="dot" aria-hidden="true" />
-            <ResumeButton className="" label="Résumé" />
+            <ResumeButton
+              className="resume-btn-inline"
+              label="Resume"
+            />
           </div>
         </Reveal>
       </div>

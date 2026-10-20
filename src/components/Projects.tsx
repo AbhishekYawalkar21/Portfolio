@@ -18,7 +18,7 @@ export function Projects() {
         <SectionHead
           index="04"
           title="Selected projects"
-          note="Three systems, end to end: document agents, graph retrieval, and on-device computer vision."
+          note="End-to-end software systems engineered for reliability, seamless integration, and measurable real-world impact."
         />
 
         <div className="projects">

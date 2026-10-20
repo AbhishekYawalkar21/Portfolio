@@ -49,38 +49,40 @@ export interface EducationEntry {
 export const profile = {
   name: "Abhishek Yawalkar",
   monogram: "AY",
-  role: "AI Software Engineer",
+  // role: "AI Software Engineer",
   location: "Mumbai, India",
-  availability: "Open to AI engineering roles",
-  email: "you@example.com",
-  resumeFile: "", // optional: drop a PDF in /public and set e.g. "/resume.pdf"
+  availability: "Open to global opportunities",
+  // The address is never rendered on the page. It is stored encoded (base64) and only
+  // decoded when a visitor clicks an email button (see components/EmailButton.tsx).
+  emailEncoded: "YWJoaXNoZWt5YXdhbGthcjRAZ21haWwuY29t",
+  resumeFile: "/Abhishek_Yawalkar_CV.pdf", // optional: drop a PDF in /public and set e.g. "/resume.pdf"
   socials: [
-    { label: "GitHub", href: "https://github.com/your-username" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },
+    { label: "GitHub", href: "https://github.com/AbhishekYawalkar21" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/abhishek-yawalkar-9a4a92176/" },
   ] as SocialLink[],
-  summary:
-    "I design and ship AI systems end to end — from retrieval pipelines and knowledge graphs to the interfaces people actually use. Currently focused on making generative AI outputs measurable, grounded, and production-ready.",
+  // summary:
+  //   "I design and ship AI systems end to end — from retrieval pipelines and knowledge graphs to the interfaces people actually use. Currently focused on making generative AI outputs measurable, grounded, and production-ready.",
 };
 
 /* ── Hero ───────────────────────────────────────────────────────────────── */
 
 export const hero = {
-  eyebrow: "Generative AI · RAG · Knowledge Graphs",
-  headline: ["AI systems that hold up", "against real-world data."],
-  highlight: "real-world data.",
+  eyebrow: "Agentic Workflows · Hybrid RAG · Knowledge Graphs · Gen AI · Full-Stack",
+  headline: ["Engineering AI architectures that solve", "real business problems."],
+  highlight: "real business problems.",
   description:
-    "AI Software Engineer with hands-on experience in generative AI evaluation and end-to-end application delivery. I turn messy documents and records into grounded, queryable systems — and keep them honest with evaluation.",
+    "Generative AI is only as good as the infrastructure supporting it. I engineer the complete ecosystem—from the bottom of the database to the top of the UI. By combining self-hosted models, strict knowledge graphs, and event-driven microservices, I build applications that do more than generate text. They reason through complex problems, enforce type-safe outputs, and ensure the system stays reliable when data gets messy.",
   primaryCta: { label: "Explore projects", href: "#projects" },
   secondaryCta: { label: "Get in touch", href: "#contact" },
   facts: [
-    { label: "Based in", value: "Mumbai, India" },
-    { label: "Education", value: "M.Appl.Comp." },
-    { label: "Recognition", value: "CS Demo Day · 2nd" },
+    { label: "Currently building", value: "Multi-Agent AI Workflows" },
+    { label: "When Not Coding", value: "Playing Cricket or Traveling" },
+    // { label: "Recognition", value: "CS Demo Day · 2nd" },
   ],
   stats: [
-    { value: "97%", label: "model accuracy, up from 73%", sub: "Outlier evaluation work" },
-    { value: "500+", label: "corporate records resolved", sub: "Supplier risk knowledge graph" },
-    { value: "85%", label: "retrieval accuracy", sub: "Hybrid GraphRAG benchmark" },
+    { value: "0 to 1", label: "Taking raw ideas and building them into deployed products", sub: "FULL LIFECYCLE DEVELOPMENT" },
+    { value: "User-First", label: "Designing intuitive and frictionless experiences", sub: "EMPATHY-DRIVEN ENGINEERING" },
+    { value: "Future-Proof", label: "Writing clean, maintainable, and reliable systems", sub: "SUSTAINABLE ARCHITECTURE" },
   ],
 };
 
@@ -90,7 +92,7 @@ export const about = {
   heading: "Evaluation-first engineering",
   paragraphs: [
     "My work sits where applied AI meets software engineering. I build systems that retrieve before they answer, explain how they reached a conclusion, and expose the evidence behind it — because a demo that only works on the happy path is not an engineering result.",
-    "That mindset comes from a year of evaluating generated code at Outlier, where I scored, reviewed, and hardened model output across Python, Java, TypeScript, and SQL. Paired with an M.Sc. in Applied Computing and full-stack delivery experience, it means I can own a feature from schema and prompt design through to the interface and its CI pipeline.",
+    "That mindset comes from a year of evaluating generated code at Outlier, where I scored, reviewed, and hardened model output across Python, Java, TypeScript, and SQL. Paired with a Masters in Applied Computing and full-stack delivery experience, it means I can own a feature from schema and prompt design through to the interface and its CI pipeline.",
   ],
   principles: [
     {
@@ -247,7 +249,7 @@ export const projects: Project[] = [
       "Docker",
       "GitHub Actions",
     ],
-    links: [{ label: "GitHub Repo", href: "https://github.com/your-username/documind" }],
+    links: [{ label: "GitHub Repo", href: "https://github.com/AbhishekYawalkar21/documind" }],
   },
   {
     id: "supplier-risk",
@@ -276,12 +278,12 @@ export const projects: Project[] = [
       "Python",
     ],
     links: [
-      { label: "GitHub Repo", href: "https://github.com/your-username/supplier-risk-graph" },
+      { label: "GitHub Repo", href: "https://github.com/AbhishekYawalkar21/supplier-risk-graph" },
     ],
   },
   {
     id: "tomato-vision",
-    title: "Tomato Crop Disease ID",
+    title: "Tomato Crop Disease Identification",
     subtitle: "Mobile computer vision",
     period: "Jan 2024 — Apr 2024",
     award: "CS Demo Day — 2nd Place",
@@ -305,7 +307,7 @@ export const projects: Project[] = [
       "Microservices",
     ],
     links: [
-      { label: "GitHub Repo", href: "https://github.com/your-username/tomato-crop-disease" },
+      { label: "GitHub Repo", href: "https://github.com/Nrup21/Tomato-Crop-Disease-Identification" },
     ],
   },
 ];

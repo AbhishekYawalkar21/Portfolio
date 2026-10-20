@@ -1,4 +1,4 @@
-import { about, profile } from "../content/resume";
+import { about } from "../content/resume";
 import { Reveal } from "./Reveal";
 import { SectionHead } from "./SectionHead";
 
@@ -19,7 +19,7 @@ export function About() {
             ))}
             <p className="about-signature">
               <span className="line" aria-hidden="true" />
-              {profile.role} · {profile.location}
+              {/* {profile.role} · {profile.location} */}
             </p>
           </Reveal>
 
