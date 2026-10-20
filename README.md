@@ -1,4 +1,4 @@
-# Portfolio — AI Software Engineer
+# Portfolio Website
 
 <!-- A single-page portfolio built with **React + TypeScript + Vite**, hand-written CSS, and zero UI
 dependencies. Every word on the page comes from one file, so the site can be updated without
