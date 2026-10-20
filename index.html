@@ -1,46 +1,43 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5f4ee" />
-    <script>
-      (function () {
-        var root = document.documentElement;
-        root.classList.add("js");
-        var stored = null;
-        try {
-          stored = localStorage.getItem("portfolio-theme");
-        } catch (error) {
-          stored = null;
-        }
-        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        root.dataset.theme = stored || (prefersDark ? "dark" : "light");
-      })();
-    </script>
-    <title>Abhishek Yawalkar - Portfolio</title>
-    <meta
-      name="description"
-      content="AI Software Engineer building retrieval-augmented, agentic systems — RAG, knowledge graphs, and document intelligence. Master of Applied Computing, University of Windsor."
-    />
-    <meta property="og:title" content="Abhishek Yawalkar - Portfolio" />
-    <meta
-      property="og:description"
-      content="RAG pipelines, knowledge graphs, and agentic workflows — end-to-end AI applications, built and shipped."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon" type="image/jpeg" href="/Photo.jpeg"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f4ee" />
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var stored = null;
+      try {
+        stored = localStorage.getItem("portfolio-theme");
+      } catch (error) {
+        stored = null;
+      }
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      root.dataset.theme = stored || (prefersDark ? "dark" : "light");
+    })();
+  </script>
+  <title>Abhishek Yawalkar - Portfolio</title>
+  <meta name="description"
+    content="AI Software Engineer building retrieval-augmented, agentic systems — RAG, knowledge graphs, and document intelligence. Master of Applied Computing, University of Windsor." />
+  <meta property="og:title" content="Abhishek Yawalkar - Portfolio" />
+  <meta property="og:description"
+    content="RAG pipelines, knowledge graphs, and agentic workflows — end-to-end AI applications, built and shipped." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/jpeg" href="/Photo.jpeg" />
+  <link rel="apple-touch-icon" href="/Photo.jpeg" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
